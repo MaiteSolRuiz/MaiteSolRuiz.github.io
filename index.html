@@ -1,92 +1,161 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Maite Sol Ruiz — Socióloga</title>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
-<header id="site-header">
-  <div class="brand">
-    <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-    <div class="brand-text">
-      <div class="role">Socióloga</div>
-      <div class="fullname">Maite Sol Ruiz</div>
-    </div>
+<!-- Header / Sidebar -->
+<aside id="sidebar">
+  <div class="avatar">
+    <img src="images/avatar.svg" alt="Maite Sol Ruiz">
   </div>
-  <nav id="desktop-nav">
+  <h1 class="name">Maite Sol Ruiz</h1>
+  <p class="tagline">Socióloga especializada en el análisis del consumo y las emociones</p>
+
+  <nav class="nav">
     <a href="#home">Inicio</a>
     <a href="#formacion">Formación</a>
     <a href="#experiencia">Experiencia</a>
-    <a href="#proyectos">Proyectos</a>
+    <a href="#proyectos">Proyectos & Artículos</a>
     <a href="#servicios">Servicios</a>
     <a href="#contacto">Contacto</a>
+    <a class="cv" href="cv.pdf" download>Descargar CV (PDF)</a>
   </nav>
-</header>
 
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/maite-sol-ruiz-ba582b21b/" target="_blank">LinkedIn</a>
+    <a href="mailto:maitesolruiz@gmail.com">maitesolruiz@gmail.com</a>
+    <p class="location">Almería · Madrid · Remoto</p>
+  </div>
+</aside>
+
+<!-- Main content -->
 <main id="main">
 
-<section id="home" class="hero">
-  <div class="hero-inner">
-    <h1 class="hero-name">Maite Sol Ruiz</h1>
-    <h2 class="hero-role">Socióloga especializada en consumo y emociones</h2>
-    <p class="hero-lead">Analizo cómo las emociones, los discursos y las prácticas sociales configuran las formas de consumo.</p>
-    <div class="hero-actions">
-      <a class="button" href="#proyectos">Ver proyectos</a>
-      <a class="button alt" href="#contacto">Contactar</a>
+  <!-- Hero banner -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <h2 class="hero-title">Maite Sol Ruiz</h2>
+      <p class="hero-sub">Socióloga</p>
+      <p class="hero-lead">Analizo cómo las emociones, los discursos y las prácticas sociales configuran las formas de consumo. Trabajo uniendo investigación, comunicación y diseño de insights.</p>
+      <div class="hero-cta">
+        <a href="#proyectos" class="button">Ver proyectos</a>
+        <a href="#contacto" class="button alt">Contactar</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="formacion" class="section">
-  <h3>Formación</h3>
-  <ul>
-    <li><b>Máster en Consumo y Comercio</b> — UCM (2024–2025)</li>
-    <li><b>Grado en Sociología</b> — Universidad de Granada (2019–2023)</li>
-    <li><b>Idiomas:</b> Español (nativo), Inglés (avanzado), Alemán (básico)</li>
-  </ul>
-</section>
+  <!-- Formación -->
+  <section id="formacion" class="section">
+    <div class="container">
+      <h3>Formación</h3>
+      <ul class="list">
+        <li><strong>Máster en Consumo y Comercio</strong> — Universidad Complutense de Madrid (2024–2025). TFM: <em>Capitalismo emocional y publicidad: Nostalgia y felicidad como estrategias de persuasión</em>.</li>
+        <li><strong>Grado en Sociología</strong> — Universidad de Granada (2019–2023).</li>
+        <li><strong>Idiomas:</strong> Español (nativo) · Inglés (avanzado) · Alemán (básico).</li>
+      </ul>
+    </div>
+  </section>
 
-<section id="experiencia" class="section alt">
-  <h3>Experiencia</h3>
-  <p><b>Asociación Madrileña de Sociología (AMS)</b> — Prácticas 2025<br>Investigación sobre la precarización del asociacionismo profesional en sociología.</p>
-  <p><b>Universidad de Granada</b> — Prácticas 2023<br>Apoyo en diseño e implementación de Plan de Igualdad.</p>
-</section>
+  <!-- Experiencia -->
+  <section id="experiencia" class="section alt">
+    <div class="container">
+      <h3>Experiencia</h3>
+      <article class="exp">
+        <h4>Asociación Madrileña de Sociología (AMS)</h4>
+        <p class="meta">Prácticas de investigación — 2025</p>
+        <p>Desarrollo de un proyecto sobre la precarización del asociacionismo profesional en sociología. Diseño metodológico, entrevistas cualitativas, transcripciones y análisis de contenido.</p>
+      </article>
 
-<section id="proyectos" class="section">
-  <h3>Proyectos & Artículos</h3>
-  <div class="cards">
-    <div class="card"><img src="images/project1.svg"><h4>TFM: Capitalismo emocional</h4><p>Revisión narrativa y análisis de caso (Dove).</p></div>
-    <div class="card"><img src="images/project2.svg"><h4>TFG: Análisis de consumo</h4><p>Estudio sobre prácticas de consumo.</p></div>
-  </div>
-</section>
+      <article class="exp">
+        <h4>Universidad de Granada</h4>
+        <p class="meta">Prácticas — 2023</p>
+        <p>Investigación y apoyo en el diseño e implementación de un Plan de Igualdad para la Facultad de Ciencias Políticas y Sociología.</p>
+      </article>
 
-<section id="servicios" class="section alt">
-  <h3>Servicios</h3>
-  <ul>
-    <li>Investigación social y de mercados</li>
-    <li>Análisis del discurso publicitario y emocional</li>
-    <li>Diseño y análisis de encuestas y entrevistas</li>
-    <li>Elaboración de informes ejecutivos</li>
-  </ul>
-</section>
+      <article class="exp">
+        <h4>Otras experiencias</h4>
+        <p class="meta">Hostelería, ventas y atención al público</p>
+        <p>Trabajo en contextos de atención, coordinación y captación que reforzaron mis habilidades comunicativas y de trabajo en equipo.</p>
+      </article>
+    </div>
+  </section>
 
-<section id="contacto" class="section contact">
-  <h3>Contacto</h3>
-  <form id="contact-form" method="POST" action="https://formspree.io/f/xgvpkjez">
-    <input name="name" type="text" placeholder="Tu nombre" required>
-    <input name="email" type="email" placeholder="Tu email" required>
-    <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
-    <button type="submit" class="button">Enviar</button>
-  </form>
-</section>
+  <!-- Proyectos & Artículos -->
+  <section id="proyectos" class="section">
+    <div class="container">
+      <h3>Proyectos & Artículos destacados</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="images/project1.svg" alt="TFM">
+          <h4>Trabajo de Fin de Máster (TFM)</h4>
+          <p><em>Capitalismo emocional y publicidad: Nostalgia y felicidad como estrategias de persuasión en el discurso publicitario.</em></p>
+          <p class="small">Revisión narrativa con más de 30 fuentes académicas y análisis de caso (Dove).</p>
+          <a href="tfm.pdf" class="link" download>Descargar TFM (PDF)</a>
+        </div>
 
-<footer class="site-footer">
-  <p>&copy; Maite Sol Ruiz — Socióloga</p>
-</footer>
+        <div class="card">
+          <img src="images/project2.svg" alt="TFG">
+          <h4>Trabajo Fin de Grado (TFG)</h4>
+          <p class="small">Análisis cualitativo y cuantitativo sobre prácticas de consumo en contextos locales.</p>
+          <a href="tfg.pdf" class="link" download>Descargar TFG (PDF)</a>
+        </div>
+
+        <div class="card">
+          <img src="images/project3.svg" alt="Informe">
+          <h4>Informe: Perfiles de consumidores</h4>
+          <p class="small">Informe de campo con encuestas a 20 participantes y análisis motivacional de compra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section alt">
+    <div class="container">
+      <h3>Servicios</h3>
+      <p>Ofrezco servicios orientados a instituciones, equipos de marketing y proyectos editoriales:</p>
+      <ul class="services">
+        <li>Investigación social y de mercados (cualitativa y cuantitativa)</li>
+        <li>Análisis de discurso publicitario y emocional</li>
+        <li>Diseño y análisis de encuestas, entrevistas y grupos focales</li>
+        <li>Elaboración de informes y presentaciones ejecutivas</li>
+        <li>Formación y workshops sobre consumo y emociones</li>
+      </ul>
+      <p class="cta-note">Interesada en colaboraciones, consultorías cortas o proyectos de investigación aplicada.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section contact">
+    <div class="container">
+      <h3>Contacto</h3>
+      <p>¿Quieres colaborar o conocer más sobre mi trabajo? Escríbeme:</p>
+      <p><strong>Email:</strong> <a href="mailto:maitesolruiz@gmail.com">maitesolruiz@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/maite-sol-ruiz-ba582b21b/" target="_blank">linkedin.com/in/maite-sol-ruiz</a></p>
+      <p class="small">Disponible para trabajo presencial y remoto. Respondo en 48–72h hábiles.</p>
+
+      <form class="contact-form" action="mailto:maitesolruiz@gmail.com" method="get" enctype="text/plain">
+        <input name="name" type="text" placeholder="Tu nombre" required>
+        <input name="email" type="email" placeholder="Tu email" required>
+        <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Maite Sol Ruiz — Socióloga · Diseño sencillo y profesional</p>
+    </div>
+  </footer>
+
+</main>
 
 <script src="assets/js/main.js"></script>
 </body>

@@ -1,13 +1,14 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contact-form');
-  if(form){
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const data = new FormData(form);
-      fetch(form.action, {method:'POST', body:data})
-      .then(() => alert('Gracias por tu mensaje. Te responderé lo antes posible.'))
-      .catch(() => alert('Error al enviar. Inténtalo de nuevo.'));
-      form.reset();
+
+// Smooth scrolling for internal links
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+    anchor.addEventListener('click', function(e){
+      var href = this.getAttribute('href');
+      if(href.length>1){
+        e.preventDefault();
+        var el=document.querySelector(href);
+        if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      }
     });
-  }
+  });
 });
